@@ -10,7 +10,7 @@ const [showMenu, setShowMenu] = useState(false);
       <div className="justify-center mx-auto">
         <div className="">
           <div className="flex flex-wrap justify-between items-center">
-            <Image className="cursor-pointer" src="/Top.svg" width={80} height={80}/>
+            <Image className="cursor-pointer" src="/Hourglass (1).png" width={80} height={80}/>
           
             <button
           className=" block xl:hidden text-gray   py-4 "
