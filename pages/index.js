@@ -634,7 +634,7 @@ const [showMenu, setShowMenu] = useState(false);
 
 
 
-                <div className="container mx-auto pt-32 pb-32 hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden" id='contact-section'>
+                <div className="container mx-auto pt-32 pb-32 block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden" id='contact-section'>
                 <div className=" mt-12">
                     <h1 className="xl:text-9xl lg:text-6xl md:text-6xl sm:text-4xl font-normal">HOLIDAYS SEASON SPECIAL OFFERS</h1>
                     <CarouselProvider
