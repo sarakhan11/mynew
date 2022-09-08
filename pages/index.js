@@ -7,13 +7,15 @@ const Index = () => {
 const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <div className="justify-center mx-auto">
+    <div className=''>
+      <div className=" justify-center mx-auto">
         <div className="">
           <div className="flex flex-wrap justify-between items-center">
-            <Image className="cursor-pointer" src="/Hourglass (1).png" width={80} height={80}/>
-          
+            <div className='pl-20'>
+              <Image className="cursor-pointer" src="/Hourglass (1).png" width={80} height={80}/>
+            </div>
             <button
-          className=" block xl:hidden text-gray   py-4 "
+          className=" block xl:hidden text-gray py-8 px-6"
           onClick={() => setShowMenu(!showMenu)}
         >
            <svg
@@ -28,30 +30,30 @@ const [showMenu, setShowMenu] = useState(false);
         </button>
 
        
-            <div className="items-right justify-center flex absolute right-8 p-4 -top-0 text-white z-40 cursor-pointer">
+            <div className="items-right justify-center flex absolute right-8 p-8 mr-4 -top-0 text-white z-40 cursor-pointer">
             <ul className="xl:flex hidden gap-9 " >
               <li className="cursor-pointer relative">
                 <div className="flex items-center ">
-                  <a href="#home-section" className="  cursor-pointer text-base leading-4 text-gray-600 ">
+                  <a href="#home-section" className="cursor-pointer text-base leading-4 text-gray-600 ">
                     Home
                   </a>
                 </div>
               </li>
-              <li className="relative mx-2">
+              <li className="relative mx-4">
                 <div className="flex items-center ">
                   <a href="#explore-section" className="cursor-pointer text-base leading-4 text-gray-600  ">
                     Explore
                   </a>
                 </div>
               </li>
-              <li className="relative mx-2">
+              <li className="relative mx-4">
                 <div className="flex items-center ">
-                  <a href="#packages-section" className=" cursor-pointer text-base leading-4 text-gray-600  ">
+                  <a href="#packages-section" className="cursor-pointer text-base leading-4 text-gray-600  ">
                     Packages
                   </a>
                 </div>
               </li>
-              <li className="relative mx-2">
+              <li className="relative mx-4">
                 <div className="flex items-center ">
                   <a href="#timeline-section" className="cursor-pointer text-base leading-4 text-gray-600  ">
                     Timeline
@@ -65,14 +67,14 @@ const [showMenu, setShowMenu] = useState(false);
                   </a>
                 </div>
               </li>
-              <li className="relative mx-2">
+              <li className="relative mx-4">
                 <div className="flex items-center ">
-                  <a href="#contact-section" className=" cursor-pointer text-base leading-4 text-gray-600  ">
+                  <a href="#contact-section" className="cursor-pointer text-base leading-4 text-gray-600  ">
                     Contact
                   </a>
                 </div>
               </li>
-              <li className="relative mx-2">
+              <li className="relative mx-4">
                 <div className="flex items-center ">
                   <a href="#register-section" className="cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
                     Register
@@ -86,7 +88,7 @@ const [showMenu, setShowMenu] = useState(false);
         className={showMenu
             ? "absolute top-0 xl:hidden w-full h-full transform -translate-x-0 z-40 transition duration-700"
             : "absolute top-0 xl:hidden w-full h-full transform -translate-x-full z-40 transition duration-700"} id="mobile-nav">
-               <div className="items-right justify-center flex absolute right-8 p-4 -top-0  text-white z-40 cursor-pointer">
+               <div className=" items-right justify-center flex absolute right-8 p-4 -top-0  text-white z-40 cursor-pointer">
               <Image
                 src="/icons8-multiply-50.png"
                 width={40}
@@ -149,18 +151,23 @@ const [showMenu, setShowMenu] = useState(false);
           </nav>
         </div>
       </div>
+    </div>
 
-      <div className="lg:flex relative lg:pb-28 md:pb-18 pb-8 pt-40 items-center container justify-center mx-auto px-10" id="home-section">
-        <div className="   lg:max-w-[31%] lg:pb-0 pb-8">
-          <p className="lg:text-9xl md:text-7xl md:text-5xl text-4xl font-normal uppercase z-20 text-gray-800  font-semibold lg:text-left text-center "> Barefoot Adventures</p>
-          <p className="pt-4 text-gray-600 lg:pr-8 lg:text-justify text-center ">
-            A travel agency is a tourism-related services to the general public
-            to offer different kinds of travelling packages for each
-            destination.
-            </p>{" "}
+
+          <div className="lg:flex my-24 relative lg:pb-28 md:pb-18 pb-8 items-center container justify-center mx-auto px-10" id="home-section">
+            <div className=" lg:max-w-[31%] lg:pb-0 pb-8">
+              <p className="lg:text-9xl md:text-7xl md:text-5xl text-4xl font-normal uppercase z-20 text-gray-800 font-semibold lg:text-left text-center ">
+                Barefoot Adventures
+              </p>
+              <p className="pt-4 text-gray-600 lg:pr-8 lg:text-justify text-center">
+                A travel agency is a tourism-related services to the general public to 
+                offer different kinds of travelling packages for each destination.
+              </p> 
             </div>
-              <Image src="/unsplash_HNip-HjxrpQ.png" width="843" height="750" className="-z-20 max-w-[60%]"/>
-            </div>
+            <Image src="/unsplash_HNip-HjxrpQ.png" width="843" height="750" className="-z-20 max-w-[60%]"/>
+          </div>
+
+
             <div className="container pt-32 pb-32 mx-auto">
               <div className="gap-12 flex flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-items-center place-content-center items-center justify-center">
                 <div className="w-9/12 mx-auto mb-12 lg:mb-0 xl:mb-0 2xl:mb-0">
@@ -393,19 +400,20 @@ const [showMenu, setShowMenu] = useState(false);
       </div>
 
 
-        <div>
-            <div className="container mx-auto px-20 mt-32 mb-12 ">
-                <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-12 ">
-                    <div className="w-11/12">
-                        <h1 className="text-8xl font-normal mt-20">ABOUT US</h1>
-                    </div>
-                    <div className="flex-colw-10/12 font-['Work+Sans']">
-                        <Image src="/Hourglass.png" width={128} height={128}/>
-                        <h1 className="text-2xl font-semibold mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet lectus quam, quis euismod turpis ornare quis. Morbi tincidunt erat quis eros semper dignissim. Cras risus dui, ultrices vel sem vitae, tristique hendrerit lacus. Vivamus mattis ultricies ullamcorper. Morbi at ligula sit amet risus suscipi.</h1>
-                    </div>
+
+          <div className="container mx-auto mt-32 mb-12" id="about-section">
+            <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mx-auto gap-12 ">
+              <div className="w-11/12">
+                <h1 className="text-5xl lg:text-7xl xl:text-9xl 2xl:text-9xl font-normal mt-20 text-gray-800 text-center">ABOUT US</h1>
+              </div>
+              <div className="w-10/12 mx-auto">
+                <div className="">
+                  <Image className='' src="/Hourglass.png" width={128} height={128}/>
                 </div>
+                <h1 className="text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl font-semibold mt-8 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin laoreet lectus quam, quis euismod turpis ornare quis.Morbi tincidunt erat quis eros semper dignissim. Cras risus dui, ultrices vel sem vitae, tristique hendrerit lacus. Vivamus mattis ultricies ullamcorper. Morbi at ligula sit amet risus suscipi.</h1>
+              </div>
             </div>
-        </div>
+          </div>
 
 
         <div className="container mx-auto mt-12 mb-12" id="About-section">
@@ -531,7 +539,7 @@ const [showMenu, setShowMenu] = useState(false);
 
 
           <div className="lg:mt-28 md:mt-18 mt-0 lg:pt-24 bg-gray-800 pt-14 lg:pb-28 pb-14 relative" id="register-section">
-            <Image src="/image 11(1).png" layout="fill" className=" -z-30" />{" "}
+            <Image src="/image 11 (1).png" layout="fill"/>
             <div className="lg:flex w-full  items-center justify-between text-white  px-10 container mx-auto">
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto justify-center grid-cols-1">
                 <ul className="z-30 text-white md:justify-left justify-center  md:mx-0 mx-auto md:border-r border-gray-500 ">
@@ -558,10 +566,10 @@ const [showMenu, setShowMenu] = useState(false);
                   <p className="text-gray-400 pb-6">Follow us on socials</p>
                   <div className="flex gap-x-8 ml-2">
                     {" "}
-                    <Image src="/Vectorfb.svg" width="9" height="15" className="my-auto cursor-pointer"/>
-                    <Image src="/Vectorins.svg" width="15" height="15" className="my-auto cursor-pointer"/>
-                    <Image src="/Vectortwi.svg" width="15" height="13" className="my-auto cursor-pointer"/>
-                    <Image src="/Vectorin.svg" width="13" height="12" className="my-auto cursor-pointer"/>
+                    <Image src="/Vector.png" width="9" height="15" className="my-auto cursor-pointer"/>
+                    <Image src="/Insta.png" width="15" height="15" className="my-auto cursor-pointer"/>
+                    <Image src="/twitter.png" width="15" height="13" className="my-auto cursor-pointer"/>
+                    <Image src="/in.png" width="13" height="12" className="my-auto cursor-pointer"/>
                   </div>
                 </div>
               </div>
