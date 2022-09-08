@@ -445,7 +445,7 @@ const [showMenu, setShowMenu] = useState(false);
             </div>
             </div>
 
-            <div className="container mx-auto pt-32 pb-32" id='contact-section'>
+            <div className="container mx-auto pt-32 pb-32 hidden sm:hidden md:hidden lg:block xl:block 2xl:block 3xl:block" id='contact-section'>
                 <div className=" mt-12">
                     <h1 className="xl:text-9xl lg:text-6xl md:text-6xl sm:text-4xl font-normal">HOLIDAYS SEASON SPECIAL OFFERS</h1>
                     <CarouselProvider
@@ -474,6 +474,7 @@ const [showMenu, setShowMenu] = useState(false);
                           />
                         </ButtonNext>
                       </div>
+
                       <Slider>
                         <div className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                           <Slide index={0}>
@@ -536,6 +537,197 @@ const [showMenu, setShowMenu] = useState(false);
                   </CarouselProvider>
                   </div>            
                 </div>
+
+
+                <div className="container mx-auto pt-32 pb-32 hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden 3xl:hidden" id='contact-section'>
+                <div className=" mt-12">
+                    <h1 className="xl:text-9xl lg:text-6xl md:text-6xl sm:text-4xl font-normal">HOLIDAYS SEASON SPECIAL OFFERS</h1>
+                    <CarouselProvider
+                    naturalSlideWidth={100}
+                    naturalSlideHeight={100}
+                    totalSlides={6}
+                    visibleSlides={2}
+                    className="lg:pr-80 md:pr-0"
+                    infinite={true}
+                    step={1}
+                  >
+                    {" "}
+                    <div className="">
+                      <div className="flex justify-between items-center pb-10 " >
+                        <p className="text-gray-600 lg:text-4xl md:text-xl text-d my-auto font-semibold mt-12 font-['Work+Sans']">
+                          {" "}
+                          A 20 days trip to all your favourite destinations
+                        </p>
+                        <ButtonNext>
+                          {" "}
+                          <Image
+                            src="/arrow-forward.svg"
+                            width="64"
+                            height="64"
+                            className="my-auto cursor-pointer"
+                          />
+                        </ButtonNext>
+                      </div>
+
+                      <Slider>
+                        <div className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                          <Slide index={0}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 49.png"
+                              width="296"
+                              height="265"
+                              className="my-auto "
+                            />
+                          </Slide>
+                          <Slide index={1}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 50.png"
+                              width="296"
+                              height="265"
+                              className="my-auto px-8"
+                            />
+                          </Slide>
+                          <Slide index={2}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 51.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                          <Slide index={3}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 49.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                          <Slide index={4}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 50.png"
+                              width="296"
+                              height="265"
+                              className="my-auto px-8"
+                            />
+                          </Slide>
+                          <Slide index={5}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 51.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                        </div>
+                      </Slider>
+                    </div>
+                  </CarouselProvider>
+                  </div>            
+                </div>
+
+
+
+                <div className="container mx-auto pt-32 pb-32 hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden" id='contact-section'>
+                <div className=" mt-12">
+                    <h1 className="xl:text-9xl lg:text-6xl md:text-6xl sm:text-4xl font-normal">HOLIDAYS SEASON SPECIAL OFFERS</h1>
+                    <CarouselProvider
+                    naturalSlideWidth={100}
+                    naturalSlideHeight={100}
+                    totalSlides={6}
+                    visibleSlides={1}
+                    className="lg:pr-80 md:pr-0"
+                    infinite={true}
+                    step={1}
+                  >
+                    {" "}
+                    <div className="">
+                      <div className="flex justify-between items-center pb-10 " >
+                        <p className="text-gray-600 lg:text-4xl md:text-xl text-d my-auto font-semibold mt-12 font-['Work+Sans']">
+                          {" "}
+                          A 20 days trip to all your favourite destinations
+                        </p>
+                        <ButtonNext>
+                          {" "}
+                          <Image
+                            src="/arrow-forward.svg"
+                            width="64"
+                            height="64"
+                            className="my-auto cursor-pointer"
+                          />
+                        </ButtonNext>
+                      </div>
+
+                      <Slider>
+                        <div className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                          <Slide index={0}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 49.png"
+                              width="296"
+                              height="265"
+                              className="my-auto "
+                            />
+                          </Slide>
+                          <Slide index={1}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 50.png"
+                              width="296"
+                              height="265"
+                              className="my-auto px-8"
+                            />
+                          </Slide>
+                          <Slide index={2}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 51.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                          <Slide index={3}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 49.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                          <Slide index={4}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 50.png"
+                              width="296"
+                              height="265"
+                              className="my-auto px-8"
+                            />
+                          </Slide>
+                          <Slide index={5}>
+                            {" "}
+                            <Image
+                              src="/Rectangle 51.png"
+                              width="296"
+                              height="265"
+                              className="my-auto"
+                            />
+                          </Slide>
+                        </div>
+                      </Slider>
+                    </div>
+                  </CarouselProvider>
+                  </div>            
+                </div>
+
+
 
 
           <div className="lg:mt-28 md:mt-18 mt-0 lg:pt-24 bg-gray-800 pt-14 lg:pb-28 pb-14 relative" id="register-section">
